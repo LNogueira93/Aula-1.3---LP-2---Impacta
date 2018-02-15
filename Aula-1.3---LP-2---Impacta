@@ -61,3 +61,5 @@ if type(resultado == int):
   print ("%.1f" % resultado, 'é inteiro')
 else:
   print ("%.1f" % resultado, 'é decimal')
+  
+  #sucesso
