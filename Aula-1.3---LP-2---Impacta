@@ -57,7 +57,7 @@ if resultado >=0:
 else:
  print("%.1f" % resultado, 'é negativo')
     
-if type(resultado) == int:
+if type(resultado == int):
   print ("%.1f" % resultado, 'é inteiro')
 else:
   print ("%.1f" % resultado, 'é decimal')
