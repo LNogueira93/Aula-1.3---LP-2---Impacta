@@ -63,3 +63,33 @@ else:
   print ("%.1f" % resultado, 'é decimal')
   
   #sucesso
+  
+  
+  
+  n1 = int(input('N1: '))
+n2 = int(input('N2: '))
+op = input('Operação: ')
+
+if op == '+':
+    resultado = n1 + n2
+elif op == '-':
+    resultado = n1 - n2
+elif op == '*':
+    resultado = n1 * n2
+elif op == '/':
+    resultado = n1 / n2
+
+if resultado % 2 == 0:
+    print("{} é par".format(resultado))
+else:
+    print("{} é impar".format(resultado))
+
+if resultado >= 0:
+    print("{} é positivo".format(resultado))
+else:
+    print("{} é negativo".format(resultado))
+
+if resultado == int(resultado):
+    print("{} é inteiro".format(resultado))
+else:
+    print("{} é decimal".format(resultado))
