@@ -1,0 +1,63 @@
+# Aula-1.3---LP-2---Impacta
+
+
+Faça um Programa que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar. O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+par ou ímpar;
+positivo ou negativo;
+inteiro ou decimal.
+
+Por exemplo: 
+Entrada: número 2, 3 e subtração (-)
+Saída:
+-1.0 é impar
+-1.0 é negativo
+-1.0 é inteiro
+
+# 1800182 - Jady Pelisari Redini
+# 1800180 - Lucas Moises Nogueira
+
+num1 = int(input('Digite um número'))
+num2 = int(input('Digite o segundo número'))
+
+print ('Qual operação deseja fazer?')
+opcao = input('+, -, *, /: ')
+
+soma = "+"
+subtração = "-"
+divisão = "/"
+multiplicação = "*"
+
+if (opcao == "+"):
+    resultado = (num1 + num2)
+    print ('Resultado:  %.1f' % resultado)
+    
+elif (opcao == "-"):
+    resultado = (num1 - num2)
+    print ('Resultado:  %.1f' % resultado)
+    
+elif (opcao == "*"):
+    resultado = (num1 * num2)
+    print ('Resultado: %.1f' % resultado)
+    
+elif (opcao == "/"):
+    resultado = (num1 / num2)
+    print ('Resultado: %.1f' % resultado)
+    
+else:
+    print ('Opção Inválida')
+    
+  
+if resultado % 2 == 0:
+  print ("%.1f" % resultado, 'é par')
+else:
+  print ("%.1f" % resultado, 'é impar')
+    
+if resultado >=0:
+  print("%.1f" % resultado, 'é positivo')
+else:
+ print("%.1f" % resultado, 'é negativo')
+    
+if type(resultado) == int:
+  print ("%.1f" % resultado, 'é inteiro')
+else:
+  print ("%.1f" % resultado, 'é decimal')
